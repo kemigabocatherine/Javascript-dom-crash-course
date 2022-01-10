@@ -20,4 +20,5 @@ console.log(headerTitle);
 
 //Changing header content
 headerTitle.textContent = 'Hello';
-headerTitle.innerText = 'Goodbye';
+headerTitle.innerText = 'Goodbye'; //pays attention to the styling if any
+headerTitle.innerHTML = '<h3>Hello</h3>';
