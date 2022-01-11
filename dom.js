@@ -96,9 +96,14 @@ for(var i = 0; i < items.length; i++){
 // TRAVERSING THE DOM //
 var itemList = document.querySelector('#items');
 // parentNode
-console.log(itemList.parentNode);
-itemList.parentNode.style.backgroundColor = '#f4f4f4';
-console.log(itemList.parentNode.parentNode.parentNode);
-itemList.parentNode.parentNode.parentNode.style.backgroundColor = '#ccc';
+// console.log(itemList.parentNode);
+// itemList.parentNode.style.backgroundColor = '#f4f4f4';
+// console.log(itemList.parentNode.parentNode.parentNode);
+// itemList.parentNode.parentNode.parentNode.style.backgroundColor = '#ccc';
+
+// parentElement
+console.log(itemList.parentElement);
+itemList.parentElement.style.backgroundColor = '#f4f4f4';
+console.log(itemList.parentElement.parentElement.parentElement);
 
 
