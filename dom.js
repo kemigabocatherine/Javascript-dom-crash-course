@@ -15,10 +15,50 @@
 // SELECTORS //
 // GETELEMENTBYID //
 //console.log(document.getElementById('header-title'));
-var headerTitle = document.getElementById('header-title');
-console.log(headerTitle);
+//var headerTitle = document.getElementById('header-title');
+//var header = document.getElementById('main-header');
+//console.log(headerTitle);
 
 //Changing header content
-headerTitle.textContent = 'Hello';
-headerTitle.innerText = 'Goodbye'; //pays attention to the styling if any
-headerTitle.innerHTML = '<h3>Hello</h3>';
+//headerTitle.textContent = 'Hello';
+//headerTitle.innerText = 'Goodbye'; //pays attention to the styling if any
+//headerTitle.innerHTML = '<h3>Hello</h3>';
+
+//Changing styles
+//header.style.borderBottom = 'solid 3px #fff';
+
+//GET ELEMENTS BY CLASS NAME //
+/*var items = document.getElementsByClassName('list-group-item');
+console.log(items);
+console.log(items[0]);
+items[1].textContent = 'Hello2';
+items[1].style.fontWeight = 'bold';
+//items[1].style.backgroundColor = 'yellow';
+
+//Gives error
+//items.style.backgroundColour = '#f4f4f4'; 
+//instead iterate through the items
+
+for(var i = 0; i < items.length; i++){
+    items[i].style.backgroundColor = '#f4f4f4';
+}*/
+
+//GET ELEMENTS BY TAG NAME//
+var li = document.getElementsByTagName('li');
+console.log(li);
+console.log(li[1]);
+li[1].textContent = 'Hello2';
+li[1].style.fontWeight = 'bold';
+//items[1].style.backgroundColor = 'yellow';
+
+//Gives error
+//items.style.backgroundColour = '#f4f4f4'; 
+//instead iterate through the items
+
+for(var i = 0; i < li.length; i++){
+    li[i].style.backgroundColor = '#f4f4f4';
+}
+
+//
+
+
