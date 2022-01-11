@@ -79,17 +79,26 @@ for(var i = 0; i < items.length; i++){
 // secondItem.style.color = 'purple';
 
 //QUERY SELECTOR ALL//
-var titles = document.querySelectorAll('.title');
+// var titles = document.querySelectorAll('.title');
 
-console.log(titles);
-titles[0].textContent = 'Hello';
+// console.log(titles);
+// titles[0].textContent = 'Hello';
 
-var odd = document.querySelectorAll('li:nth-child(odd)');
-var even = document.querySelectorAll('li:nth-child(even)');
+// var odd = document.querySelectorAll('li:nth-child(odd)');
+// var even = document.querySelectorAll('li:nth-child(even)');
 
-for(var i = 0; i < odd.length; i++){
-    odd[i].style.backgroundColor = 'skyBlue';
-    even[i].style.backgroundColor = 'orange';
-}
+// for(var i = 0; i < odd.length; i++){
+//     odd[i].style.backgroundColor = 'skyBlue';
+//     even[i].style.backgroundColor = 'orange';
+// }
+
+
+// TRAVERSING THE DOM //
+var itemList = document.querySelector('#items');
+// parentNode
+console.log(itemList.parentNode);
+itemList.parentNode.style.backgroundColor = '#f4f4f4';
+console.log(itemList.parentNode.parentNode.parentNode);
+itemList.parentNode.parentNode.parentNode.style.backgroundColor = '#ccc';
 
 
