@@ -120,6 +120,12 @@ console.log(itemList.firstElementChild);
 itemList.firstElementChild.textContent = 'Hello 1';
 // Also lastChild & lastElementChild which do the same 
 
+// next sibling
+console.log(itemList.nextSibling);
+// next element sibling
+console.log(itemList.nextElementSibling);
+// there is also previous element sibling
+
 
 
 
