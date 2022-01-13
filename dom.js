@@ -94,7 +94,7 @@ for(var i = 0; i < items.length; i++){
 
 
 // TRAVERSING THE DOM //
-var itemList = document.querySelector('#items');
+// var itemList = document.querySelector('#items');
 // parentNode
 // console.log(itemList.parentNode);
 // itemList.parentNode.style.backgroundColor = '#f4f4f4';
@@ -102,55 +102,66 @@ var itemList = document.querySelector('#items');
 // itemList.parentNode.parentNode.parentNode.style.backgroundColor = '#ccc';
 
 // parentElement
-console.log(itemList.parentElement);
-itemList.parentElement.style.backgroundColor = '#f4f4f4';
-console.log(itemList.parentElement.parentElement.parentElement);
+// console.log(itemList.parentElement);
+// itemList.parentElement.style.backgroundColor = '#f4f4f4';
+// console.log(itemList.parentElement.parentElement.parentElement);
 
-// childNodes -> Not recommended instead use Children
-// console.log(itemList.childNodes);
-// children
-console.log(itemList.children);
-console.log(itemList.children[1]);
-itemList.children[1].style.backgroundColor = "yellow";
+// // childNodes -> Not recommended instead use Children
+// // console.log(itemList.childNodes);
+// // children
+// console.log(itemList.children);
+// console.log(itemList.children[1]);
+// itemList.children[1].style.backgroundColor = "yellow";
 
-// FirstChild
-console.log(itemList.firstChild); //not recommended
-// firstElementChild
-console.log(itemList.firstElementChild);
-itemList.firstElementChild.textContent = 'Hello 1';
-// Also lastChild & lastElementChild which do the same 
+// // FirstChild
+// console.log(itemList.firstChild); //not recommended
+// // firstElementChild
+// console.log(itemList.firstElementChild);
+// itemList.firstElementChild.textContent = 'Hello 1';
+// // Also lastChild & lastElementChild which do the same 
 
-// next sibling
-console.log(itemList.nextSibling);
-// next element sibling
-console.log(itemList.nextElementSibling);
-// there is also previous element sibling
-
-
-//CREATE ELEMENTS
-
-//create a div
-var newDiv = document.createElement('div');
-
-//Add class
-newDiv.className = 'hello';
-
-//Add id
-newDiv.id = 'hello1';
-
-//Add attribute
-newDiv.setAttribute('title', 'Hello Div');
-
-// Create text node
-var newDivText = document.createTextNode('Hello World');
-
-//Add text to div
-newDiv.appendChild(newDivText);
+// // next sibling
+// console.log(itemList.nextSibling);
+// // next element sibling
+// console.log(itemList.nextElementSibling);
+// // there is also previous element sibling
 
 
-var container = document.querySelector('header .container');
-var h1 = document.querySelector('header h1');
+// //CREATE ELEMENTS
 
-console.log(newDiv);
+// //create a div
+// var newDiv = document.createElement('div');
 
-container.insertBefore(newDiv, h1);
+// //Add class
+// newDiv.className = 'hello';
+
+// //Add id
+// newDiv.id = 'hello1';
+
+// //Add attribute
+// newDiv.setAttribute('title', 'Hello Div');
+
+// // Create text node
+// var newDivText = document.createTextNode('Hello World');
+
+// //Add text to div
+// newDiv.appendChild(newDivText);
+
+
+// var container = document.querySelector('header .container');
+// var h1 = document.querySelector('header h1');
+
+// console.log(newDiv);
+
+// container.insertBefore(newDiv, h1);
+
+// EVENT LISTENERS //
+var button = document.getElementById('button').addEventListener('click', function(){
+    console.log(123);
+})
+
+function buttonClick(){
+    document.getElementById('header-title').textContent = 'Changed';
+    document.querySelector('#main').style.backgroundColor = '#f4f4f4';
+}
+
