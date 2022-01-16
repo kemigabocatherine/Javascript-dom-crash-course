@@ -155,13 +155,28 @@ for(var i = 0; i < items.length; i++){
 
 // container.insertBefore(newDiv, h1);
 
+
 // EVENT LISTENERS //
-var button = document.getElementById('button').addEventListener('click', function(){
-    console.log(123);
-})
+var button = document.getElementById('button').addEventListener('click', buttonClick);
 
 function buttonClick(){
+    //console.log('Button Clicked');
     document.getElementById('header-title').textContent = 'Changed';
-    document.querySelector('#main').style.backgroundColor = '#f4f4f4';
+    document.querySelector('#main').style.cssText = "background-color: #f4f4f4";
 }
+
+
+
+//function buttonClick(e){
+    // document.getElementById('header-title').textContent = 'Changed';
+    // document.querySelector('#main').style.backgroundColor = '#f4f4f4';
+    //console.log(e);
+
+   // console.log(e.target);
+//}
+
+// function buttonClick(e){
+//     console.log(e.clientx);// from browser
+//     console.log(e.offset); //from real element
+// }
 
