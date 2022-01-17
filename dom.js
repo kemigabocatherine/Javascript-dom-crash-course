@@ -157,26 +157,239 @@ for(var i = 0; i < items.length; i++){
 
 
 // EVENT LISTENERS //
-var button = document.getElementById('button').addEventListener('click', buttonClick);
+// var button = document.getElementById('button').addEventListener('click', buttonClick);
 
-function buttonClick(){
+// function buttonClick(e){
     //console.log('Button Clicked');
-    document.getElementById('header-title').textContent = 'Changed';
-    document.querySelector('#main').style.cssText = "background-color: #f4f4f4";
+    // document.getElementById('header-title').textContent = 'Changed';
+    // document.querySelector('#main').style.cssText = "background-color: #f4f4f4";
+//     console.log(e.target);
+//     console.log(e.target.id);
+//     console.log(e.target.className);
+//     console.log(e.target.classList);
+//     var output = document.getElementById('output');
+//     output.innerHTML = '<h3>'+e.target.id+'</h3>';
+
+//     // Event object
+//     console.log(e.type);
+
+//     // from browser window
+//     console.log(e.clientX);
+//     console.log(e.clientY);
+
+//     // from actual element
+//     console.log(e.offsetX);
+//     console.log(e.offsetY);
+
+//     console.log(e.shiftKey);
+// }
+
+var button = document.getElementById('button');
+var box = document.getElementById('box');
+// button.addEventListener('click', runEvent);
+// button.addEventListener('dblclick', runEvent);
+button.addEventListener('mousedown', runEvent);
+button.addEventListener('mouseup', runEvent);
+
+function runEvent(e){
+    console.log('EVENT TYPE: '+e.type);
 }
 
 
 
-//function buttonClick(e){
-    // document.getElementById('header-title').textContent = 'Changed';
-    // document.querySelector('#main').style.backgroundColor = '#f4f4f4';
-    //console.log(e);
 
-   // console.log(e.target);
-//}
 
-// function buttonClick(e){
-//     console.log(e.clientx);// from browser
-//     console.log(e.offset); //from real element
-// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
